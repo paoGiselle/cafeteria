@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.pointer{
+    cursor: pointer;
+}
+.todo{
+    font-family: "Atkinson Hyperlegible Next", sans-serif;
+}
+
+/* Primera mitad de mi barra*/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    height: 18vh;
+    margin-bottom: -1vh;
+}
+
+.imgLogo{
+    width: 17.1vh;   
+    cursor: pointer;
+}
+
+.fijo{
+    display: flex;
+    padding-top: 2.5vh;
+    gap: 6vh;
+    margin-left: -1.1vh;
+    align-items: center;
+    font-size: 3vh;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    transition: .0s;
+    height: 100%;
+    margin-bottom: 40px;
+    border-bottom: 1vh solid white;
+}
+
+.menu:hover{
+    color: #00754a;
+    border-bottom: 1vh solid #00754a;
+}
+
+.localHover{
+    opacity: 1; 
+}
+.localHover:hover{
+opacity: .8;}
+
+/*Segunda mitad de mi barra*/
+.menuBurger{
+    display: flex;
+    align-items: center;
+    grid-gap: 4.4vh;
+    padding-right: 3.5vh;
+    font-size: 3vh;
+    margin-top: 2vh;
+}
+
+.ubi{
+    display: flex;
+    align-items: center;
+    margin-right: 2vh;
+}
+
+.imgUbi{
+    width: 5.5vh;
+}
+
+.btn{
+    border-radius: 20px;
+    width: 17vh;
+    height: 6vh;
+    font-size: 2.6vh;
+    font-weight: bold;
+}
+
+.btnIngre{
+    background-color: white;
+    border: solid 1.5px black;
+}
+
+.btnUnirse{
+    background-color: black;
+    color: white;
+
+}
+
+
+/* Peimer banner "LATTE CON STARBUCKS" */
+
+.banner{
+    display: flex;
+    width: 100%; 
+    margin-top: 6vh;
+}
+
+.primerBanner{
+    background-color: #1c3c34;
+    color: white;
+    margin-top: 0vh;
+}
+
+.imgBannerOne{
+    width: 50%;
+}
+
+.letterBannerOne{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0vh  10vh 0 10vh;
+}
+
+.latte{
+    font-size:5.3vw ;
+    font-weight:800;
+}
+
+.cafe{
+    font-size: 3.8vh;
+    text-align: center; 
+}
+
+/* segundo banner "NUESTRO CORTADO YA ESTÁ AQUÍ" */
+
+
+.segundoBanner{
+    background-color: #cae390    ;
+    color: #1c3c34;
+}
+
+.imgBannerTwo{
+    width: 50%;
+    margin: 6vh 0 6vh 0;
+   
+}
+
+.cortado{
+    font-size:5.3vh ;
+    font-weight:800;
+    text-align: center;
+
+}
+
+.cafeTwo{
+    font-size: 4vh;
+    text-align: center; 
+}
+
+.letterBannerTWO{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: -4vh  10vh 0 10vh;
+}
+
+/* tercer banner "UNA TRADICIÓN HECHA CAFÉ" */
+
+.tercerBanner{
+    background-color: #f5e1a4;
+    color: #284784;
+}
+
+.imgBannerTres{
+    width: 50%;
+}
+
+.letterBannerTres{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0vh  10vh 0 10vh;
+}
+
+.tradicion{
+    font-size:5.3vh ;
+    font-weight:800;
+    text-align: center;
+}
+.canela{
+    margin-top: -1.5vh;
+}
+
+/* cuarto banner "RECOMPENSAS EN TU BEBIDA FAVORITA" */
+
+.cuartoBanner{
+    background-color: #1c3c34;
+    color: white;
+}
+
+.imgCuatro{
+    padding-top: .6vh;
+    padding-bottom: .6vh;
+}
+
+/* quinto banner "BIENVENIDOS TODOS LOS VASOS" */
+.quintoBanner{
+    background-color: #484c6c;
+    color: white;
+}
+
+.imgBannerCinco{
+    width: 50%;
+    margin: 6vh 0 6vh 0;
+
+}
+
+.letterBannerCinco{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: -6vh  10vh 0 10vh;
+}
+
+.btnBnner{
+    margin-top: 4vh;
+    border-radius: 20px;
+    width: 24vh;
+    height: 6vh;
+    font-size: 3vh;
+    font-weight: bold;
+    background-color: #484c6c;
+    border: 1.5px solid white ;
+    color: white;
+    opacity: 1;
+}
+
+.btnBnner:hover{
+    background: rgba(255, 255, 255, 0.1); 
+
+}
+
+/* ultimo banner "más" */
+
+.bannesFinal{
+    display: flex;
+    gap: 6vh;
+    height: 100vh;
+    margin-top: 7vh;
+}
+
+.bannerFinalUno{
+    background-color: #cae390;
+    color: #1c3c34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bannerFinalDos{
+    background-color: #1c3c34;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgBannerFinal{
+    width: 100%;
+}
+
+.letterFinal{
+    font-size: 3.8vh;
+    width: 50vh;
+    text-align: center ;
+    margin-top: 10vh;
+}
+
+.final{
+    width: 25vh;
+}
+
+.btnFinal {
+    margin-top: 4vh;
+    border-radius: 20px;
+    height: 6vh;
+    font-size: 3vh;
+    font-weight: bold;
+}
+.btnFinalOne{
+    width: 13vh;
+    background-color: #cae390;
+    border: solid 1.5px black;
+
+}
+
+.btnFinalDos{
+    width: 18vh;
+    background-color: #1c3c34;
+    color: white;
+    border: solid 1.5px white;
+}
+
+.btnFinalDos:hover{
+    background: rgba(255, 255, 255, 0.1); 
+
+}
+/* SOBRE NOSOTROS */
+
+.divNosotros{
+    margin-top: 6vh;
+    background-color: white;
+    box-shadow: 0px -7px 7px -2px rgba(0, 0, 0, 0.1);
+    height: 91vh;
+    border-bottom: solid 1px #d6d6d6 ;
+    font-size: 2.5vh;
+    margin-bottom: 6vh;
+
+}
+
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    font-size: 3.3vh;
+    margin-left: 4vh;
+}
+
+.sobreNosotrosUNO{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.imgFlecha{
+    width: 5vh;
+    height: 5vh;
+    margin-right: 3vh ;
+    margin-top: 3vh;
+}
+
+.btnNosotros{
+    color: black;
+    background-color: white;
+    border: none;
+    font-size: 3.6vh;
+    padding: 8vh 4vh 5vh 4vh ;
+}
+
+.we{
+    text-decoration: none;
+    color: #777777;
+}
+
+.we:hover{
+    color: black;
+}
+
+/* redes sociales */
+
+.footer{
+    width: 6.5vh;
+    gap: 50vh;
+    opacity: 1;
+}
+
+.footer:hover{
+    opacity: .8;
+    border-bottom: solid .5vh white;
+    }
+
+.footerRedes{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 6.5vh;
+    gap: 5.5vh;
+}
+
+/* footer Final */
+.footerFinalMayor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerFinal{
+    text-align: center;
+    font-size: 3.5vh;
+    margin-top: 5vh;
+    width: 140vh;
+    color:  #adadad;
+    margin-bottom: 5vh;
+}
+
+.derechostes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:  #adadad;
+}
+.derechos{
+    font-size: 2.8vh;
+}
+
+.raro{
+    margin-top: -2vh;
+    margin-left: 4.5vh;
+    font-size: 2vh;
+}
+
+
+/* Responsive */
+
+
+
+@media (max-width: 960px) {
+    
+/* banner uno */
+.primerBanner{
+    flex-direction: column-reverse;
+    padding-bottom:18vh ;
+}
+    
+.wi100{
+    width: 100%;
+}
+
+.latte{
+    font-size:4vw;
+    margin-left: 5vw;
+}
+
+.cafe{
+    font-size: 4.5vh;
+}
+
+.query{
+    margin-left: -4vh
+}
+
+.letterBannerOne{
+    margin-left: 2vh;
+    width: 170vh;
+
+}
+/* banner dos */
+
+
+.segundoBanner{
+    display: flex;
+    align-items: center;  
+    flex-direction: column;
+    padding-bottom:18vh ; 
+}
+
+.cortado{
+    font-size: 6vh;
+}
+
+
+
+
+.letterBannerTWO{
+    width: 150vh;
+}
+/* banner tres */
+
+.tercerBanner{
+    flex-direction: column;
+    padding-bottom:15vh ;
+}
+
+.letterBannerTres{
+    padding-right: 10vh;
+    font-size: 5vh;
+}
+.cafeTwo{
+    font-size: 4.5vh;
+}
+
+
+
+/* banner cuatro */
+
+.cuartoBanner{
+    flex-direction: column-reverse;
+    padding-bottom:18vh ;
+}
+
+.cortado{
+    width: 70vh;
+}
+
+.cuatro{
+    margin-left: -2vh;
+    width: 140vh;
+}
+
+
+/* banner cinco */
+
+.quintoBanner{
+    flex-direction: column;
+    padding-bottom:10vh ;
+}
+
+.vasos{
+    width: 120vh;
+    margin-left: -15vh;
+}
+
+.caffeCinco{
+    margin-left: -20vh;
+}
+
+.btnBnner{
+    width: 29vh;
+    height: 8vh;
+    margin-left: -20vh;
+    font-size: 3.5vh;
+}
+
+
+/* banner doble */
+
+.bannesFinal{
+    flex-direction: column;
+    height: 350vh;
+    margin-bottom: -25vh;
+
+}
+.bannerFinalGen{
+    height:160vh;
+}
+
+.letterFinal{
+    width: 100vh;
+    font-size: 4.5vh;
+}
+
+.btnFinal{
+    font-size: 3.5vh;
+}
+.btnFinalOne{
+    width: 16vh;
+    height: 8vh;
+}
+
+.btnFinalDos{
+    width: 22.5vh;
+    height: 8vh;
+}
+
+.btnNosotros{
+    font-size: 4vh;
+}
+
+.we{
+    font-size: 4vh;
+}
+
+
+
+
+
+
+
+  }
